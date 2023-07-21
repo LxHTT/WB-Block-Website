@@ -2,8 +2,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN" class="loading">
 <head>
-    <meta name="baidu-site-verification" content="codeva-lESnPFwMub" />
-    <meta name="baidu-site-verification" content="codeva-zCYpYShgVf" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +13,7 @@
     <meta name="description" content="645,"> 
     <meta name="author" content="水母方块WB-Block 管理组"> 
     <link rel="alternative" href="atom.xml" title="水母方块WB-Block" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="icon" href="https://img.fastmirror.net/s/2023/07/21/64ba076b7bdfe.png"> 
     
     
     
@@ -39,6 +37,12 @@
 <body class="loading">
     <span id="config-title" style="display:none">水母方块WB-Block</span>
     <div id="loader"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          updateServerStatus();
+          setInterval(updateServerStatus, 60000); // 每分钟更新一次服务器状态
+        });
+    </script>
     <div class="nav">
     <ul id="menu-menu" class="menu">
         
@@ -52,6 +56,10 @@
         
         <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
             <a href="/joinus/" title="如何加入" target="_blank" rel="noopener">如何加入</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/serverstats/" title="服务器状态" target="_blank" rel="noopener">服务器状态</a>
         </li>
         
         <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
@@ -97,7 +105,7 @@
 <div id="screen">
     <div id="mark">
         <div class="layer" data-depth="0.4">
-            <img src="/img/welcome-cover.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
+            <img src="/img/welcome-cover.png" id="cover" crossorigin="anonymous" width="1920" height="1080">
         </div>
     </div>
     <div id="vibrant">

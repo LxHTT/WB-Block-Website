@@ -13,7 +13,7 @@
     <meta name="description" content="645,"> 
     <meta name="author" content="水母方块WB-Block 管理组"> 
     <link rel="alternative" href="atom.xml" title="水母方块WB-Block" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="icon" href="https://img.fastmirror.net/s/2023/07/21/64ba076b7bdfe.png"> 
     
     
     
@@ -37,6 +37,12 @@
 <body class="loading">
     <span id="config-title" style="display:none">水母方块WB-Block</span>
     <div id="loader"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          updateServerStatus();
+          setInterval(updateServerStatus, 60000); // 每分钟更新一次服务器状态
+        });
+    </script>
     <div id="single" class="page">
     <div id="top">
         <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
@@ -46,8 +52,12 @@
             <div class="main">
                 <div class="content">
                 
-                        <h1 id="wb-block"><a href="#wb-block" class="headerlink" title="wb-block"></a>wb-block</h1><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>WB-Block网站的Gitee测试页面（Hexo），由落雪无痕LxHTT编写代码。</p>
+                        <h2 id="WB-Block服务器状态"><a href="#WB-Block服务器状态" class="headerlink" title="WB-Block服务器状态"></a><strong>WB-Block服务器状态</strong></h2><hr>
 
+<script src="/js/server-status.js"></script>
+
+
+<div id="server-status"></div>
                 
                 </div>
             </div>

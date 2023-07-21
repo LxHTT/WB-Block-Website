@@ -13,7 +13,7 @@
     <meta name="description" content="645,"> 
     <meta name="author" content="水母方块WB-Block 管理组"> 
     <link rel="alternative" href="atom.xml" title="水母方块WB-Block" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="icon" href="https://img.fastmirror.net/s/2023/07/21/64ba076b7bdfe.png"> 
     
     
     
@@ -37,6 +37,12 @@
 <body class="loading">
     <span id="config-title" style="display:none">水母方块WB-Block</span>
     <div id="loader"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          updateServerStatus();
+          setInterval(updateServerStatus, 60000); // 每分钟更新一次服务器状态
+        });
+    </script>
     <div id="single" class="page">
     <div id="top">
         <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
